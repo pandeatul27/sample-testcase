@@ -23,6 +23,11 @@ const Product = ({product, compare}) =>
                         </CommunityTrans>
                         </p>
                 </div>
+                <div>
+                    <CommunityTrans>
+                        Testcase 10: both <strong title={__("Testcase 10:Some random T in Trans")}>t() and trans</strong> together
+                    </CommunityTrans>
+                </div>
             </div>
         </div>
     </div>;

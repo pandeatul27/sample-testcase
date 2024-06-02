@@ -16,6 +16,7 @@ class NotFound extends Component {
             Hello, <strong>{{name:firstname}}</strong><b>lastname</b>, there has been upto {{count}} testcases.<link>Check them here</link>.
           </CommunityTrans>
         </h3>
+        <p>Testcase 11: two t() in one line __("Testcase 11:First Translation") and __communityT("Testcase 11: Another Translation")</p>
       </div>
     )
   }
