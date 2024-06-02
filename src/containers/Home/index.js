@@ -18,6 +18,9 @@ class Home extends Component {
         <div className="row">
           <div className="col-12">
             <h2 className="mb-3">__("OldLabel4")</h2>
+            <h1>
+              __commonT("Testcase 4: __commonT")
+            </h1>
           </div>
         </div>
         <ProductList products={products} compare={actions.compare}/>

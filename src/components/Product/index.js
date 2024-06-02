@@ -12,8 +12,16 @@ const Product = ({product, compare}) =>
             <div className="stats">
                 <div className="stats-container">
                     <span className="product_price">__("OldLabel1")</span>
-                    <span className="product_name">__commonT("OldLabel2")</span>
-                    <p>{product.description}</p>
+                    <span className="product_name">
+                        <CommunityTrans>
+                            Testcase <b>8</b>: case with <strong>html tags</strong>. 
+                        </CommunityTrans>
+                    </span>
+                    <p>
+                        <CommunityTrans>
+                            Testcase 3: Trans
+                        </CommunityTrans>
+                        </p>
                 </div>
             </div>
         </div>

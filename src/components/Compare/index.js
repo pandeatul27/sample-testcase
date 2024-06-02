@@ -17,13 +17,17 @@ const Compare = ({products}) =>
         </thead>
         <tbody>
           <tr className="price">
-            <th scope="row">Price</th>
+            <th scope="row">__(`Testcase 5: with ${BACKTICKS} and ${variable}`)</th>
             {products.map(product =>
               <td key={product.id} className="text-center">{product.price}</td>
             )}
           </tr>
           <tr className="colors">
-            <th scope="row">Colors</th>
+            <th scope="row">
+              <CommunityTrans i18nKey="Testcase6">
+                Testcase 6: Trans with i18nKey and {{variable}}
+              </CommunityTrans>
+            </th>
             {products.map(product =>
               <td key={product.id}>
                 {product.colors.map((color, index) =>
@@ -33,7 +37,11 @@ const Compare = ({products}) =>
             )}
           </tr>
           <tr className="condition">
-            <th scope="row">Condition</th>
+            <th scope="row">
+              <CommunityTrans i18nKey="Testcase7" count={message.length}>
+                  Testcase 7: with count. You have {{count : message.length}} message.
+              </CommunityTrans>
+            </th>
             {products.map(product =>
               <td key={product.id} className={product.condition === "Frozen" ? "bg-red" : "bg-green"}>
                 <CommunityTrans>
